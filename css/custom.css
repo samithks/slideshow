@@ -182,12 +182,15 @@
 
 /* logo*/
 .navbar .brand {
-    max-height: 0px;
+    max-height: 10px;
     position:relative;
-    left:-250px;
+    left:-320px;
+    padding:0px;
     overflow: visible;
-    padding-top: 0;
-    padding-bottom: 0;
+}
+.logo{
+	max-height:100px;
+	max-width:610px;
 }
 /*----------------------Font Aweseome Styles------------ */
 
