@@ -148,13 +148,13 @@
 }
 .navbar-search .search-query {
 	padding: 5px 15px;
+	
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 12px;
 	-webkit-border-radius: 0px;
 	-moz-border-radius: 0px;
 	border-radius: 0px;
 }
-
 .navbar-inverse .navbar-search .search-query {
 	color: #ffffff;
 	background-color: #000000;
