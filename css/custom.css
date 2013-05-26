@@ -2,7 +2,7 @@
 
 .navbar-inverse .navbar-inner {
 	background: rgba(0, 0, 0, 0.6);
-	border-bottom: 1px solid #222;
+	
 	background-color: rgba(0,0,0,0.08);
 	background-image: -moz-linear-gradient(top,rgba(0,0,0,0.4),rgba(0,0,0,0.5));
 	background-image: -webkit-gradient(linear,0 0,0 100%,from(rgba(0,0,0,0.4)),to(rgba(0,0,0,0.5)));
@@ -181,7 +181,14 @@
 }
 
 /* logo*/
-
+.navbar .brand {
+    max-height: 0px;
+    position:relative;
+    left:-250px;
+    overflow: visible;
+    padding-top: 0;
+    padding-bottom: 0;
+}
 /*----------------------Font Aweseome Styles------------ */
 
 .fa-icons li {
