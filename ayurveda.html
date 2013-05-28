@@ -21,6 +21,10 @@
 		<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
 		<link rel="stylesheet" href="font-awesome/css/font-awesome-ie7.min.css">
 
+		<link rel="stylesheet" href="css/jpreloader.css" />
+		<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+		<script type="text/javascript" src="js/jpreloader.min.js"></script>
+
 	</head>
 	<body>
 		<header>
@@ -102,7 +106,7 @@
 			</div>
 		</footer>
 		<!-- the javascript on bottom to improve loading speed================================================== -->
-		<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+
 		<script type="text/javascript" src="js/jquery.easing.min.js"></script>
 
 		<script type="text/javascript" src="js/supersized.3.2.7.min.js"></script>
@@ -114,5 +118,10 @@
 		<script src="js/bootstrap-modalmanager.js"></script>
 		<script src="js/ayurvedic_custom.js"></script>
 		<script type="text/javascript" src="js/ayurveda_background_slider.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$('body').jpreLoader();
+			});
+		</script>
 	</body>
 </html>
