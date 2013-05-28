@@ -7,7 +7,7 @@ $('#performance').on('click', function(){
   $('body').modalmanager('loading');
   
 	setTimeout(function(){
-	     $modal.load('ajax_content/modal.html', '', function(){
+	     $modal.load('../ajax_content/modal.html', '', function(){
 	      $modal.modal();
 	    });
 	  }, 1000);
