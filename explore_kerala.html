@@ -16,15 +16,15 @@
 		<link rel="stylesheet" href="theme/supersized.shutter.css" type="text/css" media="screen" />
 		<link rel="stylesheet" href="css/supersized.css" type="text/css" media="screen" />
 
+		<!-- Add fancyBox -->
+		<link rel="stylesheet" href="css/jquery.fancybox.css" type="text/css" media="screen" />
+
 		<link rel="stylesheet" href="css/custom.css" type="text/css" media="screen" />
 
 		<link rel="stylesheet" href="css/explore_custom.css" />
 
 		<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
 		<link rel="stylesheet" href="font-awesome/css/font-awesome-ie7.min.css">
-
-		<!-- Add fancyBox -->
-		<link rel="stylesheet" href="css/jquery.fancybox.css" type="text/css" media="screen" />
 
 		<link rel="stylesheet" href="css/jpreloader.css" />
 		<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
@@ -109,6 +109,7 @@
 
 			<!--Control Bar-->
 			<div id="controls-wrapper" class="load-item">
+
 				<!-- button Navigation-->
 				<ul class="footer_menu">
 
@@ -139,16 +140,15 @@
 
 				/* This is basic - uses default settings */
 
-				$("a#destination_image, a#your_kerala_image").fancybox();
+				$('a#destination_image, a#your_kerala_image').fancybox({
+					helpers : {
+						overlay : {
+							css : {
+								'background' : 'rgba(0, 0, 0, 0.7)'
+							}
+						}
+					}
 
-				/* Apply fancybox to multiple items */
-
-				$("a.group").fancybox({
-					'transitionIn' : 'elastic',
-					'transitionOut' : 'elastic',
-					'speedIn' : 600,
-					'speedOut' : 200,
-					'overlayShow' : false
 				});
 
 			});
