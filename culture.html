@@ -15,6 +15,9 @@
 
 		<link rel="stylesheet" href="theme/supersized.shutter.css" type="text/css" media="screen" />
 		<link rel="stylesheet" href="css/supersized.css" type="text/css" media="screen" />
+		
+		<!-- Add fancyBox -->
+		<link rel="stylesheet" href="css/jquery.fancybox.css" type="text/css" media="screen" />
 
 		<link rel="stylesheet" href="css/custom.css" type="text/css" media="screen" />
 
@@ -35,7 +38,7 @@
 							<button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
 								<span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
 							</button>
-							<a class="brand" href="#"><img src="img/frill.png" alt="logo" class="logo" ></a>
+							<a class="brand" href="index.html"><img src="img/frill.png" alt="logo" class="logo" ></a>
 							<div class="nav-collapse collapse">
 								<ul class="nav pull-right">
 									<li class="dropdown">
@@ -62,7 +65,7 @@
 									</li>
 									<li class="divider-vertical"></li>
 									<li>
-										<a href="#">Events and Festival</a>
+										<a id="events_festivals" href="ajax_content/events and festevels.png">Events and Festival</a>
 									</li>
 									<li class="divider-vertical"></li>
 									<li>
@@ -124,11 +127,30 @@
 		<script type="text/javascript" src="theme/supersized.shutter.min.js"></script>
 
 		<script type="text/javascript" src="js/twitter-bootstrap-hover-dropdown.js"></script>
+		<script type="text/javascript" src="js/jquery.fancybox.pack.js"></script>
 		<script src="js/bootstrap.min.js"></script>
 		<script src="js/bootstrap-modal.js"></script>
 		<script src="js/bootstrap-modalmanager.js"></script>
 		<script src="js/custom.js"></script>
 		<script type="text/javascript" src="js/background_slider.js"></script>
+		<script>
+			$(document).ready(function() {
+
+				/* This is basic - uses default settings */
+
+				$('a#events_festivals').fancybox({
+					helpers : {
+						overlay : {
+							css : {
+								'background' : 'rgba(0, 0, 0, 0.7)'
+							}
+						}
+					}
+
+				});
+
+			});
+		</script>
 		<script type="text/javascript">
 			$(document).ready(function() {
 				$('body').jpreLoader();
