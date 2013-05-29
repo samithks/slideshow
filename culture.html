@@ -46,7 +46,7 @@
 										<ul class="dropdown-menu">
 											<li class="divider"></li>
 											<li>
-												<a tabindex="-1" data-toggle="modal" id="performance" href="#">Performing Arts</a>
+												<a tabindex="-1" id="performance" href="ajax_content/performing arts3 nid.png">Performing Arts</a>
 											</li>
 											<li class="divider"></li>
 											<li>
@@ -69,7 +69,7 @@
 									</li>
 									<li class="divider-vertical"></li>
 									<li>
-										<a href="#">A Day with Masters</a>
+										<a id="a_day_with_masters" href="ajax_content/a day with masters.png">A Day with Masters</a>
 									</li>
 									<li class="divider-vertical"></li>
 									<li class="input-append">
@@ -131,14 +131,14 @@
 		<script src="js/bootstrap.min.js"></script>
 		<script src="js/bootstrap-modal.js"></script>
 		<script src="js/bootstrap-modalmanager.js"></script>
-		<script src="js/custom.js"></script>
+		<!--<script src="js/custom.js"></script>-->
 		<script type="text/javascript" src="js/background_slider.js"></script>
 		<script>
 			$(document).ready(function() {
 
 				/* This is basic - uses default settings */
 
-				$('a#events_festivals').fancybox({
+				$('a#events_festivals,a#a_day_with_masters,a#performance').fancybox({
 					helpers : {
 						overlay : {
 							css : {
