@@ -11,7 +11,10 @@
 		<link rel="stylesheet" href="css/bootstrap.css" type="text/css" media="screen" />
 		<link rel="stylesheet" href="css/bootstrap-responsive.css" type="text/css" media="screen" />
 
-		<link rel="stylesheet" href="css/bootstrap-modal.css" type="text/css" media="screen" />
+		
+		
+		<!-- Add fancyBox -->
+		<link rel="stylesheet" href="css/jquery.fancybox.css" type="text/css" media="screen" />
 
 		<link rel="stylesheet" href="theme/supersized.shutter.css" type="text/css" media="screen" />
 		<link rel="stylesheet" href="css/supersized.css" type="text/css" media="screen" />
@@ -39,19 +42,19 @@
 							<div class="nav-collapse collapse">
 								<ul class="nav pull-right">
 									<li>
-										<a data-toggle="modal" id="about_ayurveda"  href="#">About Ayurveda</a>
+										<a  id="about_ayurveda"  href="ajax_content/ayurveda/about ayurveda.png">About Ayurveda</a>
 									</li>
 									<li class="divider-vertical"></li>
 									<li>
-										<a data-toggle="modal" id="ayurvedic_centers" href="#">Ayurvedic Centers</a>
+										<a  id="ayurvedic_centers" href="ajax_content/ayurveda/ayurvedic centers.png">Ayurvedic Centers</a>
 									</li>
 									<li class="divider-vertical"></li>
 									<li>
-										<a href="#">Ayurvedic Treatments</a>
+										<a id="ayurvedic_treatment" href="ajax_content/ayurveda/ayurvedic treatments .png">Ayurvedic Treatments</a>
 									</li>
 									<li class="divider-vertical"></li>
 									<li>
-										<a href="#">Testimonials</a>
+										<a id="testimonials" href="ajax_content/ayurveda/spices.png">Herbs &#38; Spices</a>
 									</li>
 									<li class="divider-vertical"></li>
 									<li class="input-append">
@@ -72,12 +75,7 @@
 
 		<section>
 
-			<div id="ayurvedic_centers_modal" class="modal container hide fade" tabindex="-1">
-
-			</div>
-			<div id="ayurvedic_centers_modal" class="modal container hide fade" tabindex="-1">
-
-			</div>
+			
 			<!--Arrow Navigation-->
 			<a id="prevslide" class="load-item"></a>
 			<a id="nextslide" class="load-item"></a>
@@ -113,11 +111,29 @@
 		<script type="text/javascript" src="theme/supersized.shutter.min.js"></script>
 
 		<script type="text/javascript" src="js/twitter-bootstrap-hover-dropdown.js"></script>
+		<script type="text/javascript" src="js/jquery.fancybox.pack.js"></script>
 		<script src="js/bootstrap.min.js"></script>
-		<script src="js/bootstrap-modal.js"></script>
-		<script src="js/bootstrap-modalmanager.js"></script>
+		
 		<script src="js/ayurvedic_custom.js"></script>
 		<script type="text/javascript" src="js/ayurveda_background_slider.js"></script>
+		<script>
+			$(document).ready(function() {
+
+				/* This is basic - uses default settings */
+
+				$('a#about_ayurveda, a#ayurvedic_centers, a#ayurvedic_treatment, a#testimonials').fancybox({
+					helpers : {
+						overlay : {
+							css : {
+								'background' : 'rgba(0, 0, 0, 0.7)'
+							}
+						}
+					}
+
+				});
+
+			});
+		</script>
 		<script type="text/javascript">
 			$(document).ready(function() {
 				$('body').jpreLoader();
