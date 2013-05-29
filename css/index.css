@@ -1,5 +1,5 @@
 html {
-	background: url(../img/index_back.jpg) no-repeat center center fixed;
+	background: url(../img/index/face3.jpg) no-repeat center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -63,6 +63,64 @@ ul.icon_menu li {
 	-webkit-filter: drop-shadow(.1em .1em .3em rgba(0,0,0,.7));
 	filter: drop-shadow(.1em .1em .3em rgba(0,0,0,.7));
 }
+/*text*/
+
+#text_icon_wrapper {
+	position: fixed;
+	bottom: 0px;
+	height: 24%;
+	margin: 0 auto;
+	width: 100%;
+	left: 0;
+	right: 0;
+	z-index: 1;
+	
+}
+
+.text_menu {
+	padding: 1% 0;
+	float: left;
+	position: absolute;
+	left: 38%;
+}
+
+a.text_navigation {
+	
+	padding: 0;
+}
+ul.text_menu {
+	list-style: none;
+	
+	
+}
+ul.text_menu li {
+	list-style: none;
+	display: inline-block;
+	*display: inline;
+} 
+.text_margin{
+	margin:0px -1.4px;
+}
+.text_size{
+	width: 111px;
+	height: auto;
+}
+
+#dance_text{
+	box-shadow: none;
+	-webkit-filter: drop-shadow(.1em .1em .3em rgba(0,0,0,.7));
+	filter: drop-shadow(.1em .1em .3em rgba(0,0,0,.7));
+}
+#ayur_text{
+	box-shadow: none;
+	-webkit-filter: drop-shadow(.1em .1em .3em rgba(0,0,0,.7));
+	filter: drop-shadow(.1em .1em .3em rgba(0,0,0,.7));
+}
+#explore_text{
+	box-shadow: none;
+	-webkit-filter: drop-shadow(.1em .1em .3em rgba(0,0,0,.7));
+	filter: drop-shadow(.1em .1em .3em rgba(0,0,0,.7));
+}
 /*footer*/
 #footer_wrapper {
 	position: fixed;
@@ -72,7 +130,7 @@ ul.icon_menu li {
 	width: 100%;
 	left: 0;
 	right: 0;
-	z-index: 4;
+	z-index: 2;
 }
 
 .footer_menu {
