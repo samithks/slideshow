@@ -1,15 +1,15 @@
 $(document).ready(function()
 {
   $('#tour_planner-button').click(function() {
-    if($(this).css("margin-left") == "700px")
+    if($(this).css("margin-left") == "800px")
     {
-        $('.tour_planner').animate({"margin-left": '-=700'},900);
-        $('#tour_planner-button').animate({"margin-left": '-=700'},900);
+        $('.tour_planner').animate({"margin-left": '-=800'},3000);
+        $('#tour_planner-button').animate({"margin-left": '-=800'},3000);
     }
     else
     {
-        $('.tour_planner').animate({"margin-left": '+=700'},900);
-        $('#tour_planner-button').animate({"margin-left": '+=700'},900);
+        $('.tour_planner').animate({"margin-left": '+=800'},3000);
+        $('#tour_planner-button').animate({"margin-left": '+=800'},3000);
     }
 
 
