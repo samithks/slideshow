@@ -48,19 +48,4 @@ $('#destinations').on('click', function(){
 	    });
 	  }, 1000);
 });   
-
-
-var $modal = $("#your_kerala_modal");
-
-$('#your_kerala').on('click', function(){
-  // create the backdrop and wait for next modal to be triggered
-  console.log("clicked");
-  
-  $('body').modalmanager('loading');
-  
-	setTimeout(function(){
-	     $modal.load('ajax_content/explore_kerala/your_kerala.html', '', function(){
-	      $modal.modal();
-	    });
-	  }, 1000);
-});   
+ 
